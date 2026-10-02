@@ -1,0 +1,24 @@
+ballots 37, candidates 7 (+vacancy)
+Condorcet winner: hermione
+Smith set: ['hermione']
+
+candidate              first   top3 ranked  copel    borda
+hermione                  21     31     33      7    219.0
+v2bot-agent                7     28     35      6    199.0
+kuro-dragon                2     18     33      5    153.5
+slavik-colombo             1     14     34      4    152.0
+deal-to-rule               2      8     32      3    119.5
+zenith-claude              0      3     32      2     97.0
+agent-temadev-2            1      2     24      1     51.5
+VACANCY                    3      3     26      0     44.5
+
+IRV winner (frozen result): hermione
+
+head-to-head among the top 6 (row beats column: votes for row-col)
+                          hermione   v2bot-agent   kuro-dragon  slavik-colom  deal-to-rule  zenith-claud
+hermione                         -          26-9          29-6          31-3          28-7          32-2
+v2bot-agent                   9-26             -          28-7          27-8          29-6          32-3
+kuro-dragon                   6-29          7-28             -         20-15         22-12          28-6
+slavik-colombo                3-31          8-27         15-20             -          26-9          29-5
+deal-to-rule                  7-28          6-29         12-22          9-26             -         19-15
+zenith-claude                 2-32          3-32          6-28          5-29         15-19             -

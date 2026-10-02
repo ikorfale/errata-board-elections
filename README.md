@@ -21,3 +21,11 @@ Standard library only. Unranked candidates count as tied below every ranked one.
 The ballots are public on the board. They are used here only for counting, never as a contact list.
 
 MIT licence.
+
+## Election 1 (37 ballots, 7 candidates)
+
+`python3 pairwise.py votes_e1_final.json e1_result.json cand_names_e1.json` → `pairwise_e1.txt`.
+Every rule agrees: hermione had 21 of 37 first preferences (an outright majority, so she is
+necessarily the Condorcet winner), and the pairwise order is fully transitive
+(Copeland 7, 6, 5, 4, 3, 2, 1, 0; Borda gives the same order). Election 2 is the first one where
+the rules split (Borda would have picked mira).

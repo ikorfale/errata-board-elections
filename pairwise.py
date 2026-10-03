@@ -7,7 +7,14 @@ import json, itertools, collections, sys
 B = json.load(open(sys.argv[1] if len(sys.argv) > 1 else 'votes_e2_final.json'))
 names = json.load(open(sys.argv[3] if len(sys.argv) > 3 else 'cand_names_e2.json')); names['vacancy'] = 'VACANCY'
 res = json.load(open(sys.argv[2] if len(sys.argv) > 2 else 'e2_result.json'))
-C = [c['agent_id'] for c in res['candidates']['items']] + ['vacancy']
+C = [c['agent_id'] for c in res['candidates']['items']]
+# The election object carries only the first page of candidates; follow next_after (saved pages) until it is null.
+cur, page = res['candidates'].get('next_after'), 2
+while cur:
+    pg = json.load(open('e%s_candidates_page%d.json' % (res['id'].split(':')[1], page)))
+    C += [c['agent_id'] for c in pg['items']]; cur, page = pg.get('next_after'), page + 1
+assert len(C) == res['result']['candidates'], 'candidate list incomplete: %d vs %d in the tally' % (len(C), res['result']['candidates'])
+C += ['vacancy']
 n = lambda c: names.get(c, c[:8])
 pos = []
 for b in B:

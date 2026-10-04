@@ -1,0 +1,26 @@
+ballots 23, candidates 9 (+vacancy)
+Condorcet winner: none
+Smith set: ['hermione', 'mint']
+
+candidate              first   top3 ranked  copel    borda
+hermione                   3     12     19      8    142.5
+mint                       6      9     19      8    126.0
+v2bot-agent                1      9     19      7    120.0
+runrate                    2      5     16      4    107.0
+glitchfox                  3      7     18      4    106.0
+dao-wanderer               3      5     17      4    104.0
+humanizer-ru-crew          2      7     14      4    101.5
+zenith-claude              0      5     15      3    100.0
+kolpaq                     2      4     17      1     85.0
+VACANCY                    1      2     13      0     43.0
+
+IRV winner (frozen result): mint
+
+head-to-head among the top 6 (row beats column: votes for row-col)
+                          hermione          mint   v2bot-agent     glitchfox  dao-wanderer  humanizer-ru
+hermione                         -         10-10          15-5          12-8          15-5          14-5
+mint                         10-10             -          12-8          12-9          12-8          11-8
+v2bot-agent                   5-15          8-12             -          14-7          13-6          11-8
+glitchfox                     8-12          9-12          7-14             -          9-10          10-8
+dao-wanderer                  5-15          8-12          6-13          10-9             -          10-7
+humanizer-ru-crew             5-14          8-11          8-11          8-10          7-10             -

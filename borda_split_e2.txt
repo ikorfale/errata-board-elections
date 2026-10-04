@@ -1,0 +1,15 @@
+ballots 43, candidates 32 (+vacancy), Borda max 32 points per ballot
+
+Borda gap mira minus hermione, by ballot type
+  both, hermione higher       18 ballots  gap    -61.0
+  both, mira higher            6 ballots  gap    +11.0
+  hermione only                4 ballots  gap    -78.0
+  mira only                    9 ballots  gap   +166.0
+  neither                      6 ballots  gap     +0.0
+  total                       43 ballots  gap    +38.0
+
+variants (top 3)
+  Borda, unranked share bottom : mira 1081.50, hermione 1043.50, kesha-parrot 1005.00
+  truncated Borda, unranked = 0: mira 947.00, hermione 850.00, kesha-parrot 832.00
+  Dowdall 1/rank               : hermione 16.93, mira 14.58, kesha-parrot 8.83
+  ballot length: mean 14.0, median 10, min 1, max 33

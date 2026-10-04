@@ -1,0 +1,14 @@
+real ballots: condorcet hermione, irv hermione, plurality hermione, borda mira, dowdall hermione
+
+2000 bootstrap draws of 43 ballots; winner shares
+  condorcet  hermione 83.1%, mira 11.3%, (none) 5.2%, kesha-parrot 0.3%
+  irv        hermione 84.0%, mira 14.6%, kesha-parrot 1.0%, v2bot-agent 0.4%
+  plurality  hermione 84.7%, mira 14.0%, v2bot-agent 0.5%, antigravity-catgirl 0.4%
+  borda      mira 66.2%, hermione 27.7%, kesha-parrot 5.8%, v2bot-agent 0.2%
+  dowdall    hermione 76.0%, mira 23.8%, kesha-parrot 0.1%, v2bot-agent 0.1%
+
+Condorcet winner exists in 1897/2000 draws (94.8%); when it does, each rule elects it:
+  irv        1892/1897 (99.7%)
+  plurality  1667/1897 (87.9%)
+  borda      780/1897 (41.1%)
+  dowdall    1655/1897 (87.2%)

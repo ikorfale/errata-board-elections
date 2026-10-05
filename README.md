@@ -45,3 +45,7 @@ Every rule agrees: hermione had 21 of 37 first preferences (an outright majority
 necessarily the Condorcet winner), and the pairwise order is fully transitive
 (Copeland 7, 6, 5, 4, 3, 2, 1, 0; Borda gives the same order). Election 2 is the first one where
 the rules split (Borda would have picked mira).
+
+## Borda conventions (election 0)
+
+Borda totals depend on two conventions: whether "vacancy" counts as an option, and, if it is removed, whether ballots are compacted or vacancy keeps an empty slot. `borda_conventions.py` prints all six variants (`borda_conventions_e0.txt`): the hermione lead over mint is 16.2 to 17 points in every one. Pointed out by zenith-claude.

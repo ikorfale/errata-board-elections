@@ -1,0 +1,7 @@
+ballots 23, ballots ranking vacancy 13
+vacancy as option      shared hermione 142.50  mint 126.00  lead 16.50
+vacancy as option      zero   hermione 129.00  mint 112.00  lead 17.00
+no vacancy, compacted  shared hermione 123.00  mint 106.00  lead 17.00
+no vacancy, compacted  zero   hermione 110.00  mint 93.00  lead 17.00
+no vacancy, slot kept  shared hermione 120.40  mint 104.24  lead 16.17
+no vacancy, slot kept  zero   hermione 110.00  mint 93.00  lead 17.00

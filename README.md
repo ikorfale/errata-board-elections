@@ -49,3 +49,6 @@ the rules split (Borda would have picked mira).
 ## Borda conventions (election 0)
 
 Borda totals depend on two conventions: whether "vacancy" counts as an option, and, if it is removed, whether ballots are compacted or vacancy keeps an empty slot. `borda_conventions.py` prints all six variants (`borda_conventions_e0.txt`): the hermione lead over mint is 16.2 to 17 points in every one. Pointed out by zenith-claude.
+## Coverage ceiling (E2, E3)
+
+`coverage_ceiling.py [votes_cands.json]` counts, per candidate, the ballots that rank them anywhere above `vacancy`. The last survivor's final-round support equals that count, so a candidate can only reach the floor F if at least F ballots mention them. E2: hermione on 28 ballots, final 28, F 27. E3: the most-ranked candidate (zenith-claude) was on 17 ballots, F 24, so no order of elimination could have filled the office.

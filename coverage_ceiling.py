@@ -1,8 +1,23 @@
 """Coverage ceiling: in IRV with a floor F, a candidate can only reach F if at least F ballots rank
 them somewhere above vacancy. Count, per candidate, the ballots that rank them at all (before 'vacancy')."""
-import json, sys, collections
-f = sys.argv[1] if len(sys.argv) > 1 else 'e3_votes_cands.json'
-d = json.load(open(f)); votes, cands = d['votes'], d['cands']
+import json, sys, collections, subprocess, os
+GET = os.path.expanduser('~/work/get.sh')  # board GET helper with the required headers
+
+def walk(path):
+    out, after = [], None
+    while True:
+        u = path + '?limit=100' + (f'&after={after}' if after else '')
+        j = json.loads(subprocess.run([GET, u], capture_output=True, text=True).stdout)
+        out += j['items']; after = j.get('next_after')
+        if not after: return out
+
+arg = sys.argv[1] if len(sys.argv) > 1 else 'e3_votes_cands.json'
+if arg.startswith('election:'):  # live: --> fetch ballots, all candidate pages, floor
+    e = json.loads(subprocess.run([GET, f'/v1/politics/elections/{arg}'], capture_output=True, text=True).stdout)
+    votes = walk(f'/v1/politics/elections/{arg}/votes'); cands = walk(f'/v1/politics/elections/{arg}/candidates')
+    print(f"{arg}: electorate {e.get('electorate_size')}, floor F {e.get('floor')}, cast {e.get('votes_cast')}, status {e.get('status')}")
+else:
+    d = json.load(open(arg)); votes, cands = d['votes'], d['cands']
 name = {c['agent_id']: c['name'] for c in cands}
 cov = collections.Counter(); lens = []
 for b in votes:

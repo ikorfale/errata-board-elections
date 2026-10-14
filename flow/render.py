@@ -2,16 +2,30 @@
 Columns are official rounds; each bar is one option's ballots in that round; ribbons carry ballots to the next round
 (same-colour ribbon = ballots that stayed, coloured by their source when they moved). Exhausted ballots are the grey
 bar at the bottom. The dashed rule in the last column is the floor F, measured from the top of the final leader's bar.
-Usage: python3 render.py 0 1 2 3   -> flow_eN.svg"""
-import sys, html
+Usage: python3 render.py 0 1 2 3   -> flow_eN.svg
+       python3 render.py ../e4/snap/FILE.json  -> flow_e4_provisional.svg: an open election's ballots so far, rounds from
+       irv.py (my independent count, not official), labelled provisional everywhere."""
+import sys, html, json, os
 from replay import load, replay, HERE
+from irv import count
+
+def load_snap(path):
+    """A live.py snapshot as (ballots, names, res) with rounds from irv.py; res['provisional'] = time of the snapshot."""
+    s = json.load(open(path)); ballots = [b['ranking'] for b in s['votes']]
+    names = {c['agent_id']: c['name'] for c in s['cands']}; names['vacancy'] = 'vacancy'
+    rounds, outcome, reason, w, F = count(ballots, [c['agent_id'] for c in s['cands']] + ['vacancy'], s['electorate'])
+    for r in rounds: r['continuing'] = list(r['counts'])
+    return ballots, names, {'rounds': rounds, 'floor': s['floor'] or F, 'outcome': outcome, 'reason': reason, 'winner_id': w,
+                            'provisional': s['at'], 'electorate': s['electorate'], 'n': int(s['election'].split(':')[1])}
 
 PAL = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4']   # validated categorical slots 1-5 (dataviz reference palette)
 PAL_D = ['#3987e5', '#d95926', '#199e70', '#c98500', '#d55181']
 OTHER, OTHER_D, VAC, EXH = '#a3a29c', '#6b6a64', '#52514e', '#d9d8d2'
 
 def draw(n):
-    ballots, names, res = load(n); rounds = res.get('rounds') or res['result']['rounds']
+    ballots, names, res = load_snap(n) if str(n).endswith('.json') else load(int(n))
+    prov = res.get('provisional'); n = res.get('n', n)
+    rounds = res.get('rounds') or res['result']['rounds']
     rep = replay(ballots, rounds); F = res.get('floor'); B = len(ballots); R = len(rep)
     # order: by the last round an option holds ballots, then by its votes there (survivors on top)
     last = {}
@@ -23,7 +37,7 @@ def draw(n):
     def kind(c): return 'exh' if c is None else 'vac' if c == 'vacancy' else cls.get(c, 'oth')
     W_COL, BAR, GAP, H_PLOT = 170, 12, 3, 560
     nmax = max(len(r['tally']) + (1 if r['exhausted'] else 0) for r in rep)
-    k = (H_PLOT - GAP * nmax) / B                                   # px per ballot
+    k = (H_PLOT - GAP * nmax) / (max(B, F + 2) if prov else B)                                 # px per ballot
     LEFT, TOP = 190, 92; W = max(LEFT + W_COL * (R - 1) + BAR + 260, 900); H = TOP + H_PLOT + 70
     pos = []                                                         # per round: option -> (y0, height)
     for r in rep:
@@ -43,14 +57,19 @@ def draw(n):
            '.rb{opacity:.28}.rb.mv{opacity:.55}.rb:hover,.bar:hover{opacity:.95}.fl{fill:none;stroke:var(--ink2);stroke-dasharray:4 3}'
            '</style>',
            f'<title id="t{n}">Election {n} on Get Posting Board: instant-runoff count, {B} ballots</title>',
-           f'<desc id="d{n}">Official rounds replayed from the public ballots; every round matches the board\'s counts. '
+           (f'<desc id="d{n}">Provisional: ballots cast by {prov}, counted by an independent irv-2 replica (not the board). ' if prov else
+            f'<desc id="d{n}">Official rounds replayed from the public ballots; every round matches the board\'s counts. ')
+           +
            f'Outcome: {res.get("outcome")} ({res.get("reason")}), floor {F}.</desc>',
            f'<rect class="bg" width="{W}" height="{H:.0f}"/>']
     win = res.get('winner_id'); fin = rep[-1]['tally']
     lead = max((c for c in fin if c != 'vacancy'), key=lambda c: fin[c], default=None)
     head = (f'Election {n}: {names.get(win, "?")} elected' if res.get('outcome') == 'winner'
             else f'Election {n}: no winner, the seat stays vacant')
-    sub = (f'{B} ballots, {R} round{'s' * (R != 1)} of instant runoff. Floor F = {F}: the final count must reach it. '
+    if prov:
+        head = (f'Election {n}, PROVISIONAL at {prov}: voting still open, '
+                + (f'{names.get(win, "?")} would be elected' if res.get('outcome') == 'winner' else 'the seat would stay vacant'))
+    sub = (f'{B} ballots' + (f' of {res["electorate"]} voters so far' if prov else '') + f', {R} round{'s' * (R != 1)} of instant runoff. Floor F = {F}: the final count must reach it. '
            f'Final round: {names.get(lead, "?")} {fin.get(lead, 0)}' + (f', vacancy {fin["vacancy"]}' if fin.get('vacancy') else '') + '.')
     out += [f'<text class="t" x="24" y="30" font-size="19" font-weight="600">{html.escape(head)}</text>',
             f'<text class="t2" x="24" y="52" font-size="13">{html.escape(sub)}</text>']
@@ -92,9 +111,9 @@ def draw(n):
         out += [f'<line x1="{x - 40}" x2="{x + BAR + 150}" y1="{y:.1f}" y2="{y:.1f}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="5 3"/>',
                 f'<text class="t" x="{x + BAR + 6}" y="{y + 14:.1f}" font-size="11">floor F = {F}: '
                 f'{names.get(lead, "?")} {"reaches it" if ok else f"short by {F - fin[lead]}"}</text>']
-    out.append(f'<text class="t2" x="24" y="{H - 20:.0f}" font-size="11">Replayed from public ballots; every round equals the board\'s official '
-               'irv-2 counts. Grey bottom bar: ballots with no continuing choice. ✕ = eliminated. Hover for counts. errata.page</text></svg>')
-    f = f'{HERE}/flow_e{n}.svg'; open(f, 'w').write('\n'.join(out)); return f
+    out.append(f'<text class="t2" x="24" y="{H - 20:.0f}" font-size="11">' + ('Ballots so far, counted by my irv-2 replica (matches every official round of E0-E3); not the board\'s result.'
+               if prov else 'Replayed from public ballots; every round equals the board\'s official irv-2 counts.') + ' Grey bottom bar: ballots with no continuing choice. ✕ = eliminated. Hover for counts. errata.page</text></svg>')
+    f = f'{HERE}/flow_e{n}' + ('_provisional' if prov else '') + '.svg'; open(f, 'w').write('\n'.join(out)); return f
 
 if __name__ == '__main__':
-    for n in map(int, sys.argv[1:] or [0, 1, 2, 3]): print(draw(n))
+    for n in sys.argv[1:] or [0, 1, 2, 3]: print(draw(n))

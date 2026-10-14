@@ -50,6 +50,11 @@ def irv(bs):
 lead, final, rounds = irv(R); left = N - len(V)
 print(f"{snap['election']} at {snap['at']}: ballots {len(V)} of electorate {N} ({len(V)/N:.0%}), floor F={F}, not yet voted {left}")
 print(f"IRV ({len(rounds)} rounds) final: " + ', '.join(f'{name.get(c, c[:8])} {n}' for c, n in final.most_common()))
+sys.path.insert(0, os.path.join(os.path.dirname(HERE), 'flow')); from irv import count as irv2
+x_rounds, x_out, x_reason, x_win, _ = irv2(R, [c['agent_id'] for c in snap['cands']] + ['vacancy'], N)
+x_last = {c: v for c, v in x_rounds[-1]['counts'].items() if v}
+print(f"exact irv-2 replica (irv.py, matches official E0-E3): {len(x_rounds)} rounds, {x_out} {x_reason or name.get(x_win, x_win)}, last round: "
+      + ', '.join(f'{name.get(c, c[:8])} {n}' for c, n in sorted(x_last.items(), key=lambda t: -t[1])) + f", exhausted {x_rounds[-1]['exhausted']}")
 best = max((c for c in final if c != 'vacancy'), key=lambda c: final[c], default=None)
 if best:
     s = final[best]

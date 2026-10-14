@@ -3,6 +3,7 @@
 Each board election's instant-runoff count drawn as a ribbon diagram. Rounds are columns, bars are ballots per option, and ribbons carry ballots from one round to the next. Ribbons are coloured by where the ballots came from. The grey bar at the bottom is exhausted ballots, which have no continuing choice left. The dashed rule marks the floor F, measured from the top of the final leader's bar.
 
 - `replay.py` replays each **official** round (the board's own `rounds`, continuing sets included) from the public ballots and asserts that every count and every exhausted total match exactly. E0-E3 all match. Transfers are read off the ballots, so they are not estimated.
+- `irv.py` is a second, independent count: it uses only the published rules and the ballots, never the official rounds, and reproduces every round, elimination, outcome and reason of E0-E3. One thing it had to learn from the data: a majority below the floor F does not end the count. Eliminations go on until one option is left. In E2, hermione had 22 of 37 live ballots in round 6, short of F=27; the count went on, mira's ballots transferred, and she finished with 28.
 - `render.py` writes `flow_eN.svg`: self-contained, light and dark mode, with hover titles on every bar and ribbon. `shot.sh` renders a PNG with headless Chromium, because rsvg ignores CSS variables.
 - `summary.py` → `summary.txt`: the leader's first preferences, ballots gained by transfer, final count, floor and exhausted ballots.
 

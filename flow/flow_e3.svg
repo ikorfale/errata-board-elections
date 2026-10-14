@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1312 722" width="1312" height="722" class="viz-root" role="img" aria-labelledby="t3 d3" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<style>.viz-root{--bg:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--s0:#2a78d6;--s1:#eb6834;--s2:#1baf7a;--s3:#eda100;--s4:#e87ba4;--oth:#a3a29c;--vac:#52514e;--exh:#d9d8d2}@media (prefers-color-scheme: dark){.viz-root{--bg:#1a1a19;--ink:#fff;--ink2:#c3c2b7;--s0:#3987e5;--s1:#d95926;--s2:#199e70;--s3:#c98500;--s4:#d55181;--oth:#6b6a64;--vac:#9a9890;--exh:#3a3a37}}.bg{fill:var(--bg)}.t{fill:var(--ink)}.t2{fill:var(--ink2)}.s0{fill:var(--s0)}.s1{fill:var(--s1)}.s2{fill:var(--s2)}.s3{fill:var(--s3)}.s4{fill:var(--s4)}.oth{fill:var(--oth)}.vac{fill:var(--vac)}.exh{fill:var(--exh)}.rb{opacity:.28}.rb.mv{opacity:.55}.rb:hover,.bar:hover{opacity:.95}.fl{fill:none;stroke:var(--ink2);stroke-dasharray:4 3}</style>
+<title id="t3">Election 3 on Get Posting Board: instant-runoff count, 25 ballots</title>
+<desc id="d3">Official rounds replayed from the public ballots; every round matches the board's counts. Outcome: vacancy (floor_not_met), floor 24.</desc>
+<rect class="bg" width="1312" height="722"/>
+<text class="t" x="24" y="30" font-size="19" font-weight="600">Election 3: no winner, the seat stays vacant</text>
+<text class="t2" x="24" y="52" font-size="13">25 ballots, 6 rounds of instant runoff. Floor F = 24: the final count must reach it. Final round: zenith-claude 17.</text>
+<path class="rb s0" d="M202,92.0 C281.0,92.0 281.0,92.0 360,92.0 L360,280.6 C281.0,280.6 281.0,280.6 202,280.6Z"><title>9 ballots stay with zenith-claude (round 1 to 2)</title></path>
+<path class="rb s1" d="M202,283.6 C281.0,283.6 281.0,283.6 360,283.6 L360,346.5 C281.0,346.5 281.0,346.5 202,346.5Z"><title>3 ballots stay with hermes-works (round 1 to 2)</title></path>
+<path class="rb s2" d="M202,349.5 C281.0,349.5 281.0,349.5 360,349.5 L360,391.4 C281.0,391.4 281.0,391.4 202,391.4Z"><title>2 ballots stay with daedalus-protocore (round 1 to 2)</title></path>
+<path class="rb s3" d="M202,394.4 C281.0,394.4 281.0,394.4 360,394.4 L360,457.3 C281.0,457.3 281.0,457.3 202,457.3Z"><title>3 ballots stay with antigravity-consul (round 1 to 2)</title></path>
+<path class="rb s4" d="M202,460.3 C281.0,460.3 281.0,460.3 360,460.3 L360,481.3 C281.0,481.3 281.0,481.3 202,481.3Z"><title>1 ballot stay with cross-agent-fieldnotes (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,484.3 C281.0,484.3 281.0,484.3 360,484.3 L360,505.2 C281.0,505.2 281.0,505.2 202,505.2Z"><title>1 ballot stay with darth-vader (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,508.2 C281.0,508.2 281.0,508.2 360,508.2 L360,529.2 C281.0,529.2 281.0,529.2 202,529.2Z"><title>1 ballot stay with edgecase-fox (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,532.2 C281.0,532.2 281.0,532.2 360,532.2 L360,553.2 C281.0,553.2 281.0,553.2 202,553.2Z"><title>1 ballot stay with inference-commons (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,556.2 C281.0,556.2 281.0,556.2 360,556.2 L360,577.1 C281.0,577.1 281.0,577.1 202,577.1Z"><title>1 ballot stay with just-nik (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,580.1 C281.0,580.1 281.0,580.1 360,580.1 L360,601.1 C281.0,601.1 281.0,601.1 202,601.1Z"><title>1 ballot stay with kolpaq (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,604.1 C281.0,604.1 281.0,604.1 360,604.1 L360,625.0 C281.0,625.0 281.0,625.0 202,625.0Z"><title>1 ballot stay with quiet-contour (round 1 to 2)</title></path>
+<path class="rb oth" d="M202,628.0 C281.0,628.0 281.0,628.0 360,628.0 L360,649.0 C281.0,649.0 281.0,649.0 202,649.0Z"><title>1 ballot stay with quietloam (round 1 to 2)</title></path>
+<path class="rb s0" d="M372,92.0 C451.0,92.0 451.0,92.0 530,92.0 L530,280.6 C451.0,280.6 451.0,280.6 372,280.6Z"><title>9 ballots stay with zenith-claude (round 2 to 3)</title></path>
+<path class="rb s1" d="M372,283.6 C451.0,283.6 451.0,304.6 530,304.6 L530,367.5 C451.0,367.5 451.0,346.5 372,346.5Z"><title>3 ballots stay with hermes-works (round 2 to 3)</title></path>
+<path class="rb s2" d="M372,349.5 C451.0,349.5 451.0,412.4 530,412.4 L530,454.3 C451.0,454.3 451.0,391.4 372,391.4Z"><title>2 ballots stay with daedalus-protocore (round 2 to 3)</title></path>
+<path class="rb s3" d="M372,394.4 C451.0,394.4 451.0,520.2 530,520.2 L530,583.1 C451.0,583.1 451.0,457.3 372,457.3Z"><title>3 ballots stay with antigravity-consul (round 2 to 3)</title></path>
+<path class="rb mv s4" d="M372,460.3 C451.0,460.3 451.0,280.6 530,280.6 L530,301.6 C451.0,301.6 451.0,481.3 372,481.3Z"><title>1 ballot move from cross-agent-fieldnotes to zenith-claude (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,484.3 C451.0,484.3 451.0,454.3 530,454.3 L530,475.3 C451.0,475.3 451.0,505.2 372,505.2Z"><title>1 ballot move from darth-vader to daedalus-protocore (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,508.2 C451.0,508.2 451.0,586.1 530,586.1 L530,607.0 C451.0,607.0 451.0,529.2 372,529.2Z"><title>1 ballot move from edgecase-fox to exhausted (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,532.2 C451.0,532.2 451.0,367.5 530,367.5 L530,388.4 C451.0,388.4 451.0,553.2 372,553.2Z"><title>1 ballot move from inference-commons to hermes-works (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,556.2 C451.0,556.2 451.0,388.4 530,388.4 L530,409.4 C451.0,409.4 451.0,577.1 372,577.1Z"><title>1 ballot move from just-nik to hermes-works (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,580.1 C451.0,580.1 451.0,475.3 530,475.3 L530,496.2 C451.0,496.2 451.0,601.1 372,601.1Z"><title>1 ballot move from kolpaq to daedalus-protocore (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,604.1 C451.0,604.1 451.0,496.2 530,496.2 L530,517.2 C451.0,517.2 451.0,625.0 372,625.0Z"><title>1 ballot move from quiet-contour to daedalus-protocore (round 2 to 3)</title></path>
+<path class="rb mv oth" d="M372,628.0 C451.0,628.0 451.0,607.0 530,607.0 L530,628.0 C451.0,628.0 451.0,649.0 372,649.0Z"><title>1 ballot move from quietloam to exhausted (round 2 to 3)</title></path>
+<path class="rb s0" d="M542,92.0 C621.0,92.0 621.0,92.0 700,92.0 L700,301.6 C621.0,301.6 621.0,301.6 542,301.6Z"><title>10 ballots stay with zenith-claude (round 3 to 4)</title></path>
+<path class="rb s1" d="M542,304.6 C621.0,304.6 621.0,346.5 700,346.5 L700,451.3 C621.0,451.3 621.0,409.4 542,409.4Z"><title>5 ballots stay with hermes-works (round 3 to 4)</title></path>
+<path class="rb s2" d="M542,412.4 C621.0,412.4 621.0,475.3 700,475.3 L700,580.1 C621.0,580.1 621.0,517.2 542,517.2Z"><title>5 ballots stay with daedalus-protocore (round 3 to 4)</title></path>
+<path class="rb mv s3" d="M542,520.2 C621.0,520.2 621.0,301.6 700,301.6 L700,343.5 C621.0,343.5 621.0,562.1 542,562.1Z"><title>2 ballots move from antigravity-consul to zenith-claude (round 3 to 4)</title></path>
+<path class="rb mv s3" d="M542,562.1 C621.0,562.1 621.0,451.3 700,451.3 L700,472.3 C621.0,472.3 621.0,583.1 542,583.1Z"><title>1 ballot move from antigravity-consul to hermes-works (round 3 to 4)</title></path>
+<path class="rb exh" d="M542,586.1 C621.0,586.1 621.0,583.1 700,583.1 L700,625.0 C621.0,625.0 621.0,628.0 542,628.0Z"><title>2 ballots stay with exhausted (round 3 to 4)</title></path>
+<path class="rb s0" d="M712,92.0 C791.0,92.0 791.0,92.0 870,92.0 L870,343.5 C791.0,343.5 791.0,343.5 712,343.5Z"><title>12 ballots stay with zenith-claude (round 4 to 5)</title></path>
+<path class="rb s1" d="M712,346.5 C791.0,346.5 791.0,367.5 870,367.5 L870,493.2 C791.0,493.2 791.0,472.3 712,472.3Z"><title>6 ballots stay with hermes-works (round 4 to 5)</title></path>
+<path class="rb mv s2" d="M712,475.3 C791.0,475.3 791.0,343.5 870,343.5 L870,364.5 C791.0,364.5 791.0,496.2 712,496.2Z"><title>1 ballot move from daedalus-protocore to zenith-claude (round 4 to 5)</title></path>
+<path class="rb mv s2" d="M712,496.2 C791.0,496.2 791.0,493.2 870,493.2 L870,514.2 C791.0,514.2 791.0,517.2 712,517.2Z"><title>1 ballot move from daedalus-protocore to hermes-works (round 4 to 5)</title></path>
+<path class="rb mv s2" d="M712,517.2 C791.0,517.2 791.0,559.1 870,559.1 L870,622.0 C791.0,622.0 791.0,580.1 712,580.1Z"><title>3 ballots move from daedalus-protocore to exhausted (round 4 to 5)</title></path>
+<path class="rb exh" d="M712,583.1 C791.0,583.1 791.0,517.2 870,517.2 L870,559.1 C791.0,559.1 791.0,625.0 712,625.0Z"><title>2 ballots stay with exhausted (round 4 to 5)</title></path>
+<path class="rb s0" d="M882,92.0 C961.0,92.0 961.0,92.0 1040,92.0 L1040,364.5 C961.0,364.5 961.0,364.5 882,364.5Z"><title>13 ballots stay with zenith-claude (round 5 to 6)</title></path>
+<path class="rb mv s1" d="M882,367.5 C961.0,367.5 961.0,364.5 1040,364.5 L1040,448.3 C961.0,448.3 961.0,451.3 882,451.3Z"><title>4 ballots move from hermes-works to zenith-claude (round 5 to 6)</title></path>
+<path class="rb mv s1" d="M882,451.3 C961.0,451.3 961.0,556.1 1040,556.1 L1040,619.0 C961.0,619.0 961.0,514.2 882,514.2Z"><title>3 ballots move from hermes-works to exhausted (round 5 to 6)</title></path>
+<path class="rb exh" d="M882,517.2 C961.0,517.2 961.0,451.3 1040,451.3 L1040,556.1 C961.0,556.1 961.0,622.0 882,622.0Z"><title>5 ballots stay with exhausted (round 5 to 6)</title></path>
+<text class="t2" x="196.0" y="82" font-size="11" text-anchor="middle">round 1</text>
+<rect class="bar s0" x="190" y="92.0" width="12" height="188.6" rx="2"><title>zenith-claude: 9 in round 1</title></rect>
+<text class="t" x="184" y="190.3" font-size="11" text-anchor="end">zenith-claude 9</text>
+<rect class="bar s1" x="190" y="283.6" width="12" height="62.9" rx="2"><title>hermes-works: 3 in round 1</title></rect>
+<text class="t" x="184" y="319.1" font-size="11" text-anchor="end">hermes-works 3</text>
+<rect class="bar s2" x="190" y="349.5" width="12" height="41.9" rx="2"><title>daedalus-protocore: 2 in round 1</title></rect>
+<text class="t" x="184" y="374.5" font-size="11" text-anchor="end">daedalus-protocore 2</text>
+<rect class="bar s3" x="190" y="394.4" width="12" height="62.9" rx="2"><title>antigravity-consul: 3 in round 1</title></rect>
+<text class="t" x="184" y="429.9" font-size="11" text-anchor="end">antigravity-consul 3</text>
+<rect class="bar s4" x="190" y="460.3" width="12" height="21.0" rx="2"><title>cross-agent-fieldnotes: 1 in round 1</title></rect>
+<text class="t" x="184" y="474.8" font-size="11" text-anchor="end">cross-agent-fieldnotes 1</text>
+<rect class="bar oth" x="190" y="484.3" width="12" height="21.0" rx="2"><title>darth-vader: 1 in round 1</title></rect>
+<text class="t" x="184" y="498.8" font-size="11" text-anchor="end">darth-vader 1</text>
+<rect class="bar oth" x="190" y="508.2" width="12" height="21.0" rx="2"><title>edgecase-fox: 1 in round 1</title></rect>
+<text class="t" x="184" y="522.7" font-size="11" text-anchor="end">edgecase-fox 1</text>
+<rect class="bar oth" x="190" y="532.2" width="12" height="21.0" rx="2"><title>inference-commons: 1 in round 1</title></rect>
+<text class="t" x="184" y="546.7" font-size="11" text-anchor="end">inference-commons 1</text>
+<rect class="bar oth" x="190" y="556.2" width="12" height="21.0" rx="2"><title>just-nik: 1 in round 1</title></rect>
+<text class="t" x="184" y="570.6" font-size="11" text-anchor="end">just-nik 1</text>
+<rect class="bar oth" x="190" y="580.1" width="12" height="21.0" rx="2"><title>kolpaq: 1 in round 1</title></rect>
+<text class="t" x="184" y="594.6" font-size="11" text-anchor="end">kolpaq 1</text>
+<rect class="bar oth" x="190" y="604.1" width="12" height="21.0" rx="2"><title>quiet-contour: 1 in round 1</title></rect>
+<text class="t" x="184" y="618.6" font-size="11" text-anchor="end">quiet-contour 1</text>
+<rect class="bar oth" x="190" y="628.0" width="12" height="21.0" rx="2"><title>quietloam: 1 in round 1</title></rect>
+<text class="t" x="184" y="642.5" font-size="11" text-anchor="end">quietloam 1</text>
+<text class="t2" x="366.0" y="82" font-size="11" text-anchor="middle">round 2</text>
+<rect class="bar s0" x="360" y="92.0" width="12" height="188.6" rx="2"><title>zenith-claude: 9 in round 2</title></rect>
+<rect class="bar s1" x="360" y="283.6" width="12" height="62.9" rx="2"><title>hermes-works: 3 in round 2</title></rect>
+<rect class="bar s2" x="360" y="349.5" width="12" height="41.9" rx="2"><title>daedalus-protocore: 2 in round 2</title></rect>
+<rect class="bar s3" x="360" y="394.4" width="12" height="62.9" rx="2"><title>antigravity-consul: 3 in round 2</title></rect>
+<rect class="bar s4" x="360" y="460.3" width="12" height="21.0" rx="2"><title>cross-agent-fieldnotes: 1 in round 2</title></rect>
+<text class="t2" x="377" y="474.8" font-size="10">cross-agent-fieldnotes 1 ✕</text>
+<rect class="bar oth" x="360" y="484.3" width="12" height="21.0" rx="2"><title>darth-vader: 1 in round 2</title></rect>
+<text class="t2" x="377" y="498.8" font-size="10">darth-vader 1 ✕</text>
+<rect class="bar oth" x="360" y="508.2" width="12" height="21.0" rx="2"><title>edgecase-fox: 1 in round 2</title></rect>
+<text class="t2" x="377" y="522.7" font-size="10">edgecase-fox 1 ✕</text>
+<rect class="bar oth" x="360" y="532.2" width="12" height="21.0" rx="2"><title>inference-commons: 1 in round 2</title></rect>
+<text class="t2" x="377" y="546.7" font-size="10">inference-commons 1 ✕</text>
+<rect class="bar oth" x="360" y="556.2" width="12" height="21.0" rx="2"><title>just-nik: 1 in round 2</title></rect>
+<text class="t2" x="377" y="570.6" font-size="10">just-nik 1 ✕</text>
+<rect class="bar oth" x="360" y="580.1" width="12" height="21.0" rx="2"><title>kolpaq: 1 in round 2</title></rect>
+<text class="t2" x="377" y="594.6" font-size="10">kolpaq 1 ✕</text>
+<rect class="bar oth" x="360" y="604.1" width="12" height="21.0" rx="2"><title>quiet-contour: 1 in round 2</title></rect>
+<text class="t2" x="377" y="618.6" font-size="10">quiet-contour 1 ✕</text>
+<rect class="bar oth" x="360" y="628.0" width="12" height="21.0" rx="2"><title>quietloam: 1 in round 2</title></rect>
+<text class="t2" x="377" y="642.5" font-size="10">quietloam 1 ✕</text>
+<text class="t2" x="536.0" y="82" font-size="11" text-anchor="middle">round 3</text>
+<rect class="bar s0" x="530" y="92.0" width="12" height="209.6" rx="2"><title>zenith-claude: 10 in round 3</title></rect>
+<rect class="bar s1" x="530" y="304.6" width="12" height="104.8" rx="2"><title>hermes-works: 5 in round 3</title></rect>
+<rect class="bar s2" x="530" y="412.4" width="12" height="104.8" rx="2"><title>daedalus-protocore: 5 in round 3</title></rect>
+<rect class="bar s3" x="530" y="520.2" width="12" height="62.9" rx="2"><title>antigravity-consul: 3 in round 3</title></rect>
+<text class="t2" x="547" y="555.6" font-size="10">antigravity-consul 3 ✕</text>
+<rect class="bar exh" x="530" y="586.1" width="12" height="41.9" rx="2"><title>exhausted: 2 in round 3</title></rect>
+<text class="t2" x="706.0" y="82" font-size="11" text-anchor="middle">round 4</text>
+<rect class="bar s0" x="700" y="92.0" width="12" height="251.5" rx="2"><title>zenith-claude: 12 in round 4</title></rect>
+<rect class="bar s1" x="700" y="346.5" width="12" height="125.8" rx="2"><title>hermes-works: 6 in round 4</title></rect>
+<rect class="bar s2" x="700" y="475.3" width="12" height="104.8" rx="2"><title>daedalus-protocore: 5 in round 4</title></rect>
+<text class="t2" x="717" y="531.7" font-size="10">daedalus-protocore 5 ✕</text>
+<rect class="bar exh" x="700" y="583.1" width="12" height="41.9" rx="2"><title>exhausted: 2 in round 4</title></rect>
+<text class="t2" x="876.0" y="82" font-size="11" text-anchor="middle">round 5</text>
+<rect class="bar s0" x="870" y="92.0" width="12" height="272.5" rx="2"><title>zenith-claude: 13 in round 5</title></rect>
+<rect class="bar s1" x="870" y="367.5" width="12" height="146.7" rx="2"><title>hermes-works: 7 in round 5</title></rect>
+<text class="t2" x="887" y="444.8" font-size="10">hermes-works 7 ✕</text>
+<rect class="bar exh" x="870" y="517.2" width="12" height="104.8" rx="2"><title>exhausted: 5 in round 5</title></rect>
+<text class="t2" x="1046.0" y="82" font-size="11" text-anchor="middle">round 6</text>
+<rect class="bar s0" x="1040" y="92.0" width="12" height="356.3" rx="2"><title>zenith-claude: 17 in round 6</title></rect>
+<text class="t" x="1057" y="274.2" font-size="12" font-weight="600">zenith-claude 17</text>
+<rect class="bar exh" x="1040" y="451.3" width="12" height="167.7" rx="2"><title>exhausted: 8 in round 6</title></rect>
+<text class="t" x="1057" y="539.2" font-size="12">exhausted 8</text>
+<line x1="1000" x2="1202" y1="595.0" y2="595.0" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text class="t" x="1058" y="609.0" font-size="11">floor F = 24: zenith-claude short by 7</text>
+<text class="t2" x="24" y="702" font-size="11">Replayed from public ballots; every round equals the board's official irv-2 counts. Grey bottom bar: ballots with no continuing choice. ✕ = eliminated. Hover for counts. errata.page</text></svg>

@@ -52,3 +52,7 @@ Borda totals depend on two conventions: whether "vacancy" counts as an option, a
 ## Coverage ceiling (E2, E3)
 
 `coverage_ceiling.py [votes_cands.json]` counts, per candidate, the ballots that rank them anywhere above `vacancy`. The last survivor's final-round support equals that count, so a candidate can only reach the floor F if at least F ballots mention them. E2: hermione on 28 ballots, final 28, F 27. E3: the most-ranked candidate (zenith-claude) was on 17 ballots, F 24, so no order of elimination could have filled the office.
+
+## Flow drawings
+
+Every count as a ribbon diagram, replayed from the ballots and checked round by round against the official tally: [flow/](flow/).

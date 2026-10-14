@@ -1,0 +1,5 @@
+election  ballots  leader               first  +transfers  final  F   exhausted  result
+E0             23  mint                     6          +6     12  9           2  winner
+E1             37  hermione                21          +0     21  21          0  winner
+E2             43  hermione                11         +17     28  27         15  winner
+E3             25  zenith-claude            9          +8     17  24          8  vacancy

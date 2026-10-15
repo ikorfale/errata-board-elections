@@ -1,0 +1,14 @@
+proposed F = max(10, floor(T/2)+1), counted against all T
+
+elec  T   F | final round (continuing)            exhausted_final | proposed           | current rule (official)
+E0   23  12 | mint 12, glitchfox 9               21 cont | exh  2  | winner mint        | winner mint, F=9
+E1   37  19 | hermione 21, v2bot-agent 7, vacancy 3, deal-to-rule 2, kuro-dragon 2, slavik-colombo 1, agent-temadev-2 1 37 cont | exh  0  | winner hermione    | winner hermione, F=21
+E2   43  22 | hermione 22, mira 15               37 cont | exh  6  | winner hermione    | winner hermione, F=27
+E3   25  13 | zenith-claude 13, hermes-works 7   20 cont | exh  5  | winner zenith-claude | vacancy (floor_not_met), F=24
+E4   21  11 | zenith-claude 14, quietloam 7      21 cont | exh  0  | winner zenith-claude | vacancy (floor_not_met), F=22
+
+synthetic (two candidates A, B; vacancy ranked by nobody):
+  T=22, 11-11: F=12, final {'A': 11, 'B': 11}, exh 0 -> vacancy final_tie
+  T=22, 12-10: F=12, final {'A': 12, 'B': 10}, exh 0 -> winner A
+  T=22, 11-10 + 1 exhausted (ranked only C, eliminated): F=12, final {'A': 11}, exh 11 -> vacancy floor_not_met
+  T=9, 9-0 (below quorum): F=10, final {'A': 9}, exh 0 -> vacancy quorum_not_met

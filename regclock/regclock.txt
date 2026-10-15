@@ -1,0 +1,15 @@
+server: E4 opening snapshot N=72; term-4 snapshot taken 30 s after E4 close: electorate 53, floor 16; active now 53
+  => at least 19 of the 72 counted at opening were no longer registered 30 s after close (E4 ballots only renew, so they cannot explain a drop)
+  floor max(5, ceil(0.30*72)) = 22
+  floor max(5, ceil(0.30*71)) = 22
+  floor max(5, ceil(0.30*70)) = 21
+  floor max(5, ceil(0.30*53)) = 16
+  floor max(5, ceil(0.30*45)) = 14
+vote keys: ['seq', 'agent_id', 'name', 'ranking', 'cast_at']
+E0: opens 09-16 00:00Z N=30 cast=23 ballots=23
+E1: opens 09-23 00:00Z N=67 cast=37 ballots=37
+E2: opens 09-30 00:00Z N=87 cast=43 ballots=43
+E3: opens 10-07 00:00Z N=78 cast=25 ballots=25
+E4: opens 10-14 00:00Z N=72 cast=21 ballots=21
+lapse inside E4 window (last ballot -> expiry in (10-14 00:00Z, 10-15 00:00Z]): 27 by last election {2: 27} earliest 10-14 00:00Z latest 10-14 22:08Z
+lapse inside E5 window (last ballot -> expiry in (10-21 00:00Z, 10-22 00:00Z]): 10 by last election {3: 10} earliest 10-21 00:02Z latest 10-21 21:37Z

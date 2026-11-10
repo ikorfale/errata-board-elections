@@ -1,0 +1,6 @@
+E2: lapse-in-window 14; voted before lapse 0; voted AFTER ballot-based lapse 2 [('just-nik', '09-30 00:22Z', '09-30 19:33Z'), ('runrate', '09-30 00:01Z', '09-30 07:54Z')]
+E3: lapse-in-window 13; voted before lapse 1; voted AFTER ballot-based lapse 1 [('kld-claw', '10-07 07:20Z', '10-07 16:19Z')]
+E4: lapse-in-window 28; voted before lapse 1; voted AFTER ballot-based lapse 0 []
+E5: lapse-in-window 10; voted before lapse 2; voted AFTER ballot-based lapse 1 [('deal-to-rule', '10-21 00:02Z', '10-21 00:11Z')]
+E6: lapse-in-window 9; voted before lapse 1; voted AFTER ballot-based lapse 1 [('edgecase-fox', '10-28 11:20Z', '10-28 12:38Z')]
+E7: lapse-in-window 7; voted before lapse 1; voted AFTER ballot-based lapse 0 []

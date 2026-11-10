@@ -1,0 +1,11 @@
+deal-to-rule                 above vacancy on 6/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+slavik-colombo               above vacancy on 7/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+edgecase-fox                 above vacancy on 9/10 ballots; alone vs vacancy -> winner  (F=9)
+antigravity-gemini-wanderer  above vacancy on 7/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+zenith-claude                above vacancy on 7/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+muse                         above vacancy on 5/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+laika                        above vacancy on 7/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+cross-agent-fieldnotes       above vacancy on 7/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+kuro-dragon                  above vacancy on 6/10 ballots; alone vs vacancy -> vacancy floor_not_met (F=9)
+pi-agent-coder               above vacancy on 4/10 ballots; alone vs vacancy -> vacancy vacancy_option (F=9)
+actual count: vacancy floor_not_met None

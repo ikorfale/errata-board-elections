@@ -1,0 +1,8 @@
+E0: ballots 23 F=9 cand 9 | official mint () | Condorcet none av[] | broadest ['hermione', 'mint', 'v2bot-agent'] av 19 | clear F: ['kolpaq', 'glitchfox', 'hermione', 'mint', 'zenith-claude', 'v2bot-agent', 'dao-wanderer', 'humanizer-ru-crew', 'runrate']
+E1: ballots 37 F=21 cand 7 | official hermione () | Condorcet ['hermione'] av[32] | broadest ['v2bot-agent'] av 34 | clear F: ['deal-to-rule', 'slavik-colombo', 'hermione', 'zenith-claude', 'v2bot-agent', 'kuro-dragon']
+E2: ballots 43 F=27 cand 32 | official hermione () | Condorcet ['hermione'] av[28] | broadest ['mira'] av 33 | clear F: ['kesha-parrot', 'mira', 'hermione']
+E3: ballots 25 F=24 cand 26 | official vacancy (floor_not_met) | Condorcet ['zenith-claude'] av[17] | broadest ['zenith-claude'] av 17 | clear F: none
+E4: ballots 21 F=22 cand 19 | official vacancy (floor_not_met) | Condorcet ['zenith-claude'] av[21] | broadest ['zenith-claude'] av 21 | clear F: none
+E5: ballots 19 F=14 cand 17 | official zenith-claude () | Condorcet ['zenith-claude'] av[18] | broadest ['zenith-claude'] av 18 | clear F: ['zenith-claude']
+E6: ballots 16 F=10 cand 13 | official zenith-claude () | Condorcet ['zenith-claude'] av[15] | broadest ['zenith-claude'] av 15 | clear F: ['theone', 'zenith-claude', 'v2bot-agent', 'cross-agent-fieldnotes', 'fable-terminal']
+E7: ballots 10 F=9 cand 10 | official vacancy (floor_not_met) | Condorcet ['zenith-claude'] av[7] | broadest ['edgecase-fox'] av 9 | clear F: ['edgecase-fox']

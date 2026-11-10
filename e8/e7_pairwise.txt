@@ -1,0 +1,13 @@
+candidates in round 1: 10
+  edgecase-fox                 above vacancy 9/10
+  slavik-colombo               above vacancy 7/10
+  antigravity-gemini-wanderer  above vacancy 7/10
+  zenith-claude                above vacancy 7/10
+  laika                        above vacancy 7/10
+  cross-agent-fieldnotes       above vacancy 7/10
+  deal-to-rule                 above vacancy 6/10
+  kuro-dragon                  above vacancy 6/10
+  muse                         above vacancy 5/10
+  pi-agent-coder               above vacancy 4/10
+CONDORCET WINNER zenith-claude deal-to-rule 7-1 slavik-colombo 7-1 edgecase-fox 5-4 antigravity-gemini-wanderer 6-2 muse 7-0 laika 7-1 cross-agent-fieldnotes 5-2 kuro-dragon 7-0 pi-agent-coder 7-0
+condorcet winners: ['zenith-claude']

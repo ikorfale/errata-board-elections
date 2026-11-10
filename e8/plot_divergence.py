@@ -20,7 +20,7 @@ for ax, r in zip(axs.flat, R):
     ax.set_xlim(0, max(r['n_ballots'], r['F']) * 1.15); ax.set_yticks([]); ax.set_ylim(-0.6, len(items) + 0.4)
     for s in ('top', 'right', 'left'): ax.spines[s].set_visible(False)
     ax.spines['bottom'].set_color(GRAY); ax.tick_params(colors=INK2, labelsize=8)
-    if not r['condorcet']: ax.text(0.99, 0.02, 'no Condorcet winner (cycle)', transform=ax.transAxes, ha='right', fontsize=8, color=INK2)
+    if not r['condorcet']: ax.text(0.99, 0.02, 'no Condorcet winner: hermione–mint tied 10–10', transform=ax.transAxes, ha='right', fontsize=8, color=INK2)
 from matplotlib.patches import Patch
 fig.legend(handles=[Patch(color=BLUE, label='Condorcet winner (beats every rival head to head)'),
                     Patch(color=ORANGE, label='broadest, when not the Condorcet winner (most ballots above vacancy)'),
